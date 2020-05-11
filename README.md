@@ -21,8 +21,10 @@ Checkout the API Spec [here](http://microservices-demo.github.io/api/index?url=h
 
 #### Dependencies
 ```
-go get -u github.com/FiloSottile/gvt
-gvt restore
+# inside catalogue directory
+go mod init github.com/catalogue
+# synchronize / fix "inconsistent vendoring" message
+go mod vendor
 ```
 
 #### Go tools
